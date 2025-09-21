@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MILAMICHI (MILA) — The purr-fect memecoin</title>
+  <meta name="description" content="MILAMICHI (MILA): memecoin nacido de un dibujo infantil. 1B supply, 0% tax, comunidad #MishiArmy." />
+  <meta property="og:title" content="MILAMICHI (MILA)" />
+  <meta property="og:description" content="De crayones al blockchain. Únete al #MishiArmy." />
+  <meta property="og:image" content="logo.png" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    :root{--bg:#0f0f12;--card:#171821;--text:#f6f7fb;--muted:#aeb3c1;--brand:#ff8a00;--brand2:#ffc36b}
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    header{max-width:1080px;margin:auto;padding:28px 16px;display:flex;gap:16px;align-items:center}
+    .logo{width:72px;height:72px;border-radius:16px;background:#fff0;border:2px solid #000;object-fit:cover;box-shadow:0 8px 30px #0006}
+    h1{margin:0;font-size:clamp(28px,4vw,40px)} .tag{margin-left:8px;padding:4px 10px;border-radius:999px;background:#1f2030;border:1px solid #2b2c3f;color:#ffcf96;font-weight:700}
+    .muted{color:var(--muted)} .container{max-width:1080px;margin:auto;padding:0 16px 64px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;margin:8px 0 12px}
+    .card{background:var(--card);border:1px solid #24263a;border-radius:18px;padding:22px}
+    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .btn{padding:14px 18px;border-radius:12px;border:1px solid #2a2d44;background:#1b1d2b;color:var(--text);font-weight:700;cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));border:none;color:#141414}
+    .btn.ghost{background:transparent;color:var(--brand)}
+    .section{margin-top:36px} table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden}
+    th,td{padding:14px 12px;text-align:left;border-bottom:1px solid #272a40} th{color:var(--muted);font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .foot{display:flex;justify-content:space-between;align-items:center;margin-top:28px;color:var(--muted);flex-wrap:wrap;gap:12px}
+    code{background:#1b1d2b;border:1px solid #2a2d44;padding:8px 10px;border-radius:8px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <img class="logo" src="logo.png" alt="MILAMICHI logo">
+  <div>
+    <h1>MILAMICHI <span class="tag">MILA</span></h1>
+    <p class="muted">De crayones al blockchain · 1B supply · 0% tax · #MishiArmy</p>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div class="card">
+      <h2>El mishi que conquistará tu wallet</h2>
+      <p class="muted">Nacido de un dibujo infantil real, MILAMICHI es una memecoin de comunidad: humor, transparencia y cero humo. Sin promesas financieras.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://pump.fun/COLOCA_AQUI_TU_LINK" target="_blank" rel="noopener">Buy on Pump.Fun</a>
+        <a class="btn ghost" href="#tokenomics">Ver tokenomics</a>
+        <a class="btn" href="https://x.com/TU_USUARIO" target="_blank" rel="noopener">X / Twitter</a>
+        <a class="btn" href="https://t.me/TU_GRUPO" target="_blank" rel="noopener">Telegram</a>
+      </div>
+      <div style="margin-top:14px">
+        <strong>Contrato:</strong> <code id="contract">PON_AQUI_LA_DIRECCION</code>
+        <button class="btn" onclick="copyContract()">Copiar</button>
+        <p class="muted">Verifica siempre la dirección en el anuncio fijado de X/Telegram.</p>
+      </div>
+    </div>
+    <div class="card" style="text-align:center">
+      <img src="logo.png" alt="MILAMICHI" style="width:100%;max-width:360px;border-radius:16px"/>
+      <p class="muted">Mascota oficial · arte vectorial · listo para stickers y merch</p>
+    </div>
+  </section>
+
+  <section id="about" class="section card">
+    <h2>Sobre MILAMICHI</h2>
+    <p>MILAMICHI nació del cuaderno de un niño y saltó al blockchain. Tesis: <em>storytelling real + diseño adorable + comunidad enfocada</em>.</p>
+  </section>
+
+  <section id="tokenomics" class="section card">
+    <h2>Tokenomics</h2>
+    <table>
+      <thead><tr><th>Asignación</th><th>%</th><th>Notas</th></tr></thead>
+      <tbody>
+      <tr><td>Liquidez DEX</td><td>50%</td><td>LP lock 12 meses (TX público)</td></tr>
+      <tr><td>Marketing</td><td>20%</td><td>Gnosis Safe · vesting 6 meses</td></tr>
+      <tr><td>Comunidad / Airdrops</td><td>15%</td><td>Concursos, memes, recompensas</td></tr>
+      <tr><td>Tesorería / Partners</td><td>10%</td><td>Multi-sig · transparencia</td></tr>
+      <tr><td>Equipo</td><td>5%</td><td>Cliff 3m + vesting 9m</td></tr>
+      </tbody>
+    </table>
+    <p class="muted"><strong>Impuestos:</strong> 0%. Código verificado. Transparencia por diseño.</p>
+  </section>
+
+  <section id="roadmap" class="section card">
+    <h2>Roadmap (meme-style)</h2>
+    <div class="grid">
+      <div class="card"><h3>Q1 — Lanzamiento</h3><p>Token live, LP lock, airdrop #1, stickers.</p></div>
+      <div class="card"><h3>Q2 — Comunidad</h3><p>Fanart contests, campañas en X/Telegram, solicitud CoinGecko.</p></div>
+      <div class="card"><h3>Q3 — Utilidad Meme</h3><p>Tipping bot, mini-juego, NFT del mishi.</p></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>© <span id="y"></span> MILAMICHI · Hecho con ❤️ por #MishiArmy</span>
+    <div>
+      <a class="btn" href="https://x.com/TU_USUARIO" target="_blank">X/Twitter</a>
+      <a class="btn" href="https://t.me/TU_GRUPO" target="_blank">Telegram</a>
+    </div>
+  </footer>
+</main>
+
+<script>
+  function copyContract(){
+    const t=document.getElementById('contract').textContent.trim();
+    navigator.clipboard.writeText(t).then(()=>alert('Contrato copiado'));
+  }
+  document.getElementById('y').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
